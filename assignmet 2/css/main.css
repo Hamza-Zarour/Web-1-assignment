@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Reset margins and paddings for all elements in the page */
+}
+
+body {
+    line-height: 2.2;
+    background-color: #e66e36;
+    /* Background color for the entire page */
+    color: #333;
+    padding: 27px;
+    font-family: Arial, sans-serif;
+    /* Font used in the page */
+}
+
+.navigation {
+    border-radius: 30px 30px 0px 0px;
+    background-color: #333;
+    /* Navigation bar background */
+    padding: 20px 0;
+}
+
+#nav-list {
+    list-style: none;
+    display: flex;
+    /* Use flexbox to arrange navigation items in a row */
+    justify-content: space-evenly;
+    /* Distribute nav items in agood way */
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+
+}
+
+.nav-link:hover {
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+    background-color: #5d482e;
+    /* Background change on hover */
+    border-radius: 10px;
+    /* Rounded corners on hover */
+    padding: 10px;
+}
+
+.section-header {
+    position: relative;
+    display: flex;
+    /* Use flexbox for layout to align children elements */
+    margin-bottom: 30px;
+    padding: 60px;
+    background-color: rgb(255, 255, 255);
+    /* Background for section header */
+    border-radius: 0px 0px 10px 10px;
+    /* Rounded bottom corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.403);
+    /* Add shadow effect */
+}
+
+span {
+    color: black;
+    font-size: 1.28em;
+}
+
+.header-title {
+    font-size: 2.1em;
+    color: #333;
+    position: absolute;
+    top: 28px;
+    right: 726px;
+    /* Absolute positioning for precise layout */
+}
+
+.profile-pic {
+    border: #e66e36 solid 7px;
+    border-radius: 47%;
+    /* Rounded profile picture */
+    margin: 20px;
+    margin-right: 60px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.655);
+}
+
+#intro-text {
+    font-family: cursive;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.section-hobbies {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.403);
+}
+
+#hobbies-list {
+    display: flex;
+    /* Use flexbox to layout hobby items in a row */
+    justify-content: space-evenly;
+    /* Distribute hobbies list items in agood way */
+    margin-top: 20px;
+}
+
+.hobby-item {
+    width: 240px;
+    /*Fixed width for each hobby item, and helps in making the text under the pics*/
+}
+
+.hobby-image {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.hobby-link {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hobby-link:hover {
+    color: #007BFF;
+}
+
+.hobby-item:hover .hobby-image {
+    transform: scale(1.05);
+    /* Zoom-in effect when hovering over a hobby image */
+}
+
+.section-guess-hobby {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.403);
+    text-align: center;
+    /* Center the text within the section */
+}
+
+.form-input {
+    padding: 10px;
+    width: 80%;
+    /* width(the space) for input fields */
+    margin: 10px 0;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    /* Rounded corners for input fields */
+}
+
+.form-submit {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+    border-radius: 5px;
+
+}
+
+.form-submit:hover {
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+    background-color: #0056b3;
+}
+
+.section-goals {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.403);
+    text-align: center;
+    /* Center the text within the section */
+}
+
+#goal-text {
+    font-family: cursive;
+    /* Cursive font for goal text */
+    font-size: 1.1em;
+    color: #555;
+}
+
+.section-projects {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px 10px 30px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.403);
+    text-align: center;
+}
+
+.project-link {
+    color: #007BFF;
+    text-decoration: none;
+    /* No underline for project links */
+    font-size: 1.1em;
+}
+
+.project-link:hover {
+    transition: background-color 0.3s ease;
+    background-color: #c4d3fbfd;
+    /* Light blue background on hover */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #e66e3636;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#h123 {
+    margin: 10px 0;
+}
+
+.img-footer {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer a:hover img {
+    transform: scale(1.2);
+    /* Zoom-in effect when hovering over a hobby image */
+}
